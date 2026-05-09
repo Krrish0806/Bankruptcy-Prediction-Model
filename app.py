@@ -27,9 +27,9 @@ def predict():
         result = model.predict(values)[0]
 
         if result == 1:
-            messagebox.showinfo("Result", "⚠️ Bankruptcy Risk")
+            messagebox.showinfo("Result", "Bankruptcy Risk")
         else:
-            messagebox.showinfo("Result", "✅ Safe Company")
+            messagebox.showinfo("Result", "Safe Company")
 
     except:
         messagebox.showerror("Error", "Enter valid numbers")
